@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "446105784211",
+    "firebase_url": "https://idlecat-131df.firebaseio.com",
+    "project_id": "idlecat-131df",
+    "storage_bucket": "idlecat-131df.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:446105784211:android:b1b9ae9849140040",
+        "android_client_info": {
+          "package_name": "katrina.idle.cat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "446105784211-22p3et2vmgnvcgqlsm1g79lrjluk4tvf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "katrina.idle.cat",
+            "certificate_hash": "21828a05446fac31aed2e86e6fcf7182c295cb5d"
+          }
+        },
+        {
+          "client_id": "446105784211-kblkkg0ilgrbth9m8q3842su5ru3c155.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMq5DGByBFHlZGzFi8h-ITxlEHSMy2bPE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "446105784211-kblkkg0ilgrbth9m8q3842su5ru3c155.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

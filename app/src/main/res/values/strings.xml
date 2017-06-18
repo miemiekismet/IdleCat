@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">IdleCat</string>
+    <string name="title_activity_sign_in">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="welcome_msg">Meow!</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="contacts_permission_rationale">Access to account information is required to sign in.</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="fresh_config">Fresh Config</string>
+    <string name="cause_crash">Cause Crash</string>
+    <string name="banner_ad_unit_id" translatable="false"></string>
+    <string name="no_ads">Grocery store is not in stock yet.</string>
+    <string name="full_chat">I am a full meow. Don\'t make me a fat meow.</string>
+    <string name="eating_chat">Meo..mm (Eating)</string>
+    <string name="no_food_chat">Well, we don\'t have any food you stupid.</string>
+    <string name="on_rewarded">Food! Finally you did something awesome!</string>
+    <string-array name="happy_chat_array">
+        <item>Talk to me more and more and meow and meow ~.~</item>
+        <item>Ack</item>
+        <item>Who are you?</item>
+        <item>Time to sleep?</item>
+        <item>May I have some milk?</item>
+        <item>Meow</item>
+        <item>Meow</item>
+        <item>Woof(* ~v~ *)...Meow</item>
+        <item>...</item>
+        <item>I want...meow meow meow (Why I can talk?)</item>
+        <item>Who am I?</item>
+        <item>Stay with me please.</item>
+        <item>Say something sweet to me.</item>
+        <item>I am a lazy meow</item>
+        <item>Meow...I hate workday.</item>
+        <item>I am always...sleepy. I am sleepy the cat!</item>
+        <item>Meow, don\'t forget me. Don\'t forget to feed me. </item>
+    </string-array>
+    <string-array name="normal_chat_array">
+        <item>Meow</item>
+        <item>Meow</item>
+        <item>Ack</item>
+        <item>Ack</item>
+        <item>...</item>
+        <item>...</item>
+        <item>Well, you are not that bad.</item>
+        <item>What are you doing? How about feed me?</item>
+        <item>\@. @</item>
+        <item>Hey, keep feeding me!</item>
+        <item>Do you know the weather tomorrow?\n How about go buying foods?</item>
+        <item>C\'est la vie. No surprise, not too bad.</item>
+    </string-array>
+    <string-array name="hungry_chat_array">
+        <item>Feed me right now!</item>
+        <item>I hate you</item>
+        <item>QoQ</item>
+        <item>You know you are a bad servant</item>
+        <item>Feed me before I eat you</item>
+        <item>My hint is...GET SOME FOOD!</item>
+        <item>Life is FOOOOOOOOOOD.</item>
+    </string-array>
+</resources>

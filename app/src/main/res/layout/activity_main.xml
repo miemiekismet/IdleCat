@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBackground"
+        tools:context="katrina.idle.cat.MainActivity">
+
+    <!-- Guideline -->
+    <android.support.constraint.Guideline
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/main_center_guideline"
+            app:layout_constraintGuide_percent="0.5"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteY="342dp" tools:layout_editor_absoluteX="0dp"
+    />
+
+    <android.support.constraint.Guideline
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/main_left_guideline"
+            app:layout_constraintGuide_percent="0.3"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteY="0dp" tools:layout_editor_absoluteX="123dp"
+    />
+
+    <android.support.constraint.Guideline
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/main_right_guideline"
+            app:layout_constraintGuide_percent="0.7"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteY="0dp" tools:layout_editor_absoluteX="288dp"
+    />
+    <Button
+            android:text="Login to Meet Your Cat"
+            android:id="@+id/login_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:onClick="GenerateCat"
+            app:layout_constraintLeft_toLeftOf="@+id/main_left_guideline"
+            app:layout_constraintRight_toLeftOf="@+id/main_right_guideline"
+            app:layout_constraintBottom_toTopOf="@+id/main_center_guideline"/>
+</android.support.constraint.ConstraintLayout>
