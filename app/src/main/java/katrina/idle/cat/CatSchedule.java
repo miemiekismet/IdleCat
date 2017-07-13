@@ -32,6 +32,7 @@ public class CatSchedule extends TimerTask {
         if (Math.random() > 0.99) {
           mCatStatus.increaseFood();
         }
+        mCatStatus.updateTime();
         mDatabaseRef.setValue(mCatStatus.getStatus());
     }
 }

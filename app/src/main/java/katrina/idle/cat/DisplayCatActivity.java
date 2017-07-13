@@ -22,6 +22,7 @@ import java.util.Timer;
 
 public class DisplayCatActivity extends AppCompatActivity implements RewardedVideoAdListener {
     private static final String TAG = "DisplayCatActivity";
+    private static final Integer UPDATE_FREQUENCY = 10 * 1000;
 
     // Firebase instance variables
     private FirebaseAnalytics mFirebaseAnalytics;
@@ -30,12 +31,12 @@ public class DisplayCatActivity extends AppCompatActivity implements RewardedVid
     private AdView mBannerAdView;
 
     // Activity items
+    private TextView mAgeTextView;
     private TextView mCatHungryTextView;
     private TextView mCatIntimacyTextView;
     private TextView mCatFoodTextView;
     private TextView mCatChatTextView;
     private Timer mCatTimer;
-    private Timer mCatTempTimer;
     private CatStatusHolder mCatStatus;
     private CatSchedule mCatSchedule;
     private CatChat mCatChat;
@@ -44,6 +45,7 @@ public class DisplayCatActivity extends AppCompatActivity implements RewardedVid
     private String mUsername = "";
     private String mUID = "";
 
+    // System info
     private boolean inited = false;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -62,6 +64,7 @@ public class DisplayCatActivity extends AppCompatActivity implements RewardedVid
         mCatHungryTextView = (TextView) findViewById(R.id.cat_hungry_text_view);
         mCatIntimacyTextView = (TextView) findViewById(R.id.cat_intimacy_text_view);
         mCatFoodTextView = (TextView) findViewById(R.id.cat_food_text_view);
+        mAgeTextView = (TextView) findViewById(R.id.age_text_view);
 
         // Init cat chat.
         mCatChat = new CatChat();
@@ -80,8 +83,7 @@ public class DisplayCatActivity extends AppCompatActivity implements RewardedVid
         mFirebaseDatabaseReference.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
-                // This method is called once with the initial value and again
-                // whenever data at this location is updated.
+                // Get init value. null indicates it's a new user.
                 CatStatus s = dataSnapshot.getValue(CatStatus.class);
                 if (s == null) {
                     // New user initate.
@@ -89,11 +91,13 @@ public class DisplayCatActivity extends AppCompatActivity implements RewardedVid
                     mFirebaseDatabaseReference.setValue(mCatStatus.getStatus());
                 } else {
                     mCatStatus = new CatStatusHolder();
-                    mCatStatus.setStatus(s);
+                    mCatStatus.initStatus(s);
                 }
+                // Update UI
                 updateCatStatusTextViews();
+                // Start timer.
                 mCatSchedule = new CatSchedule(mFirebaseDatabaseReference, mCatStatus);
-                mCatTimer.schedule(mCatSchedule, 1000, 10000);
+                mCatTimer.schedule(mCatSchedule, 1000, UPDATE_FREQUENCY);
                 inited = true;
             }
 
@@ -155,14 +159,30 @@ public class DisplayCatActivity extends AppCompatActivity implements RewardedVid
         Resources res = getResources();
         String[] chat_array;
         Integer pat;
+        Integer age = mCatStatus.getAge();
+
+        // Bypass age for now.
+        age = 20;
 
         ImageView cat = (ImageView)findViewById(R.id.cat_image_view);
         if (mCatStatus.getHungry() > 70) {
-            chat_array = res.getStringArray(R.array.happy_chat_array);
+            if (age <= 3) {
+                chat_array = res.getStringArray(R.array.happy_chat_array_1);
+            } else if (age <= 10) {
+                chat_array = res.getStringArray(R.array.happy_chat_array_2);
+            } else {
+                chat_array = res.getStringArray(R.array.happy_chat_array_3);
+            }
             cat.setImageResource(R.drawable.pusheen_happy_1);
             pat = 3;
         } else if (mCatStatus.getHungry() > 30) {
-            chat_array = res.getStringArray(R.array.normal_chat_array);
+            if (age <= 3) {
+                chat_array = res.getStringArray(R.array.normal_chat_array_1);
+            } else if (age <= 10) {
+                chat_array = res.getStringArray(R.array.normal_chat_array_2);
+            } else {
+                chat_array = res.getStringArray(R.array.normal_chat_array_3);
+            }
             double v = Math.random();
             if (v > 2/3) {
                 cat.setImageResource(R.drawable.pusheen_normal_1);
@@ -173,7 +193,13 @@ public class DisplayCatActivity extends AppCompatActivity implements RewardedVid
             }
             pat = 1;
         } else {
-            chat_array = res.getStringArray(R.array.hungry_chat_array);
+            if (age <= 3) {
+                chat_array = res.getStringArray(R.array.hungry_chat_array_1);
+            } else if (age <= 10) {
+                chat_array = res.getStringArray(R.array.hungry_chat_array_2);
+            } else {
+                chat_array = res.getStringArray(R.array.hungry_chat_array_3);
+            }
             cat.setImageResource(R.drawable.pusheen_hungry);
             pat = 0;
         }
@@ -191,8 +217,9 @@ public class DisplayCatActivity extends AppCompatActivity implements RewardedVid
     public void watchAds(View view) {
         if (mRewardedAd.isLoaded()) {
             mRewardedAd.show();
+        } else {
+            mCatChatTextView.setText(getString(R.string.no_ads));
         }
-        mCatChatTextView.setText(getString(R.string.no_ads));
     }
 
 
@@ -250,5 +277,6 @@ public class DisplayCatActivity extends AppCompatActivity implements RewardedVid
         mCatHungryTextView.setText(mCatStatus.getHungry().toString());
         mCatIntimacyTextView.setText(mCatStatus.getIntimacy().toString());
         mCatFoodTextView.setText(mCatStatus.getFood().toString());
+        mAgeTextView.setText(mCatStatus.getAgeString());
     }
 }

@@ -11,12 +11,56 @@
     <string name="fresh_config">Fresh Config</string>
     <string name="cause_crash">Cause Crash</string>
     <string name="banner_ad_unit_id" translatable="false"></string>
+
+    <!-- Chats -->
+    <!-- Special Chats -->
     <string name="no_ads">Grocery store is not in stock yet.</string>
     <string name="full_chat">I am a full meow. Don\'t make me a fat meow.</string>
     <string name="eating_chat">Meo..mm (Eating)</string>
     <string name="no_food_chat">Well, we don\'t have any food you stupid.</string>
     <string name="on_rewarded">Food! Finally you did something awesome!</string>
-    <string-array name="happy_chat_array">
+    <!-- 1 - 3 days -->
+    <!-- ## happy -->
+    <string-array name="happy_chat_array_1">
+        <item>Miu~</item>
+        <item>\@v\@</item>
+        <item>=v=</item>
+    </string-array>
+    <!-- ## normal -->
+    <string-array name="normal_chat_array_1">
+        <item>0.0?</item>
+        <item>-.-</item>
+        <item>Miu</item>
+    </string-array>
+    <!-- ## hungry -->
+    <string-array name="hungry_chat_array_1">
+        <item>TAT!!!</item>
+        <item>QAQ</item>
+        <item>...!!!</item>
+    </string-array>
+    <!-- 4 - 10 days -->
+    <!-- ## happy -->
+    <string-array name="happy_chat_array_2">
+        <item>Meow, it\'s you.</item>
+        <item>Play with me~</item>
+        <item>Who are you? You look familiar to me.</item>
+    </string-array>
+    <!-- ## normal -->
+    <string-array name="normal_chat_array_2">
+        <item>Meow</item>
+        <item>~~~Mi</item>
+        <item>Milk?</item>
+        <item>Food?</item>
+    </string-array>
+    <!-- ## hungry -->
+    <string-array name="hungry_chat_array_2">
+        <item>Food!!!</item>
+        <item>Be nice to me:(</item>
+        <item>Meow...!!!</item>
+    </string-array>
+    <!-- 11+ days -->
+    <!-- ## happy -->
+    <string-array name="happy_chat_array_3">
         <item>Talk to me more and more and meow and meow ~.~</item>
         <item>Ack</item>
         <item>Who are you?</item>
@@ -34,8 +78,11 @@
         <item>Meow...I hate workday.</item>
         <item>I am always...sleepy. I am sleepy the cat!</item>
         <item>Meow, don\'t forget me. Don\'t forget to feed me. </item>
+        <item>You know, it\'s your destiny to feed me.</item>
+        <item>Take a rest. Think about your life. ^@ w @ ^~</item>
     </string-array>
-    <string-array name="normal_chat_array">
+    <!-- ## normal -->
+    <string-array name="normal_chat_array_3">
         <item>Meow</item>
         <item>Meow</item>
         <item>Ack</item>
@@ -49,7 +96,8 @@
         <item>Do you know the weather tomorrow?\n How about go buying foods?</item>
         <item>C\'est la vie. No surprise, not too bad.</item>
     </string-array>
-    <string-array name="hungry_chat_array">
+    <!-- ## hungry -->
+    <string-array name="hungry_chat_array_3">
         <item>Feed me right now!</item>
         <item>I hate you</item>
         <item>QoQ</item>

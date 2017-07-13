@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
         if (mFirebaseUser == null) {
             // Not signed in, launch the Sign In activity
             startActivity(new Intent(this, SignInActivity.class));
-            finish();
+        } else {
             mUsername = mFirebaseUser.getDisplayName();
             mUID = mFirebaseUser.getUid();
             Intent intent = new Intent(this, DisplayCatActivity.class);
