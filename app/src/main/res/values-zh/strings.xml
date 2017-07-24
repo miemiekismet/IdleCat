@@ -1,0 +1,109 @@
+<resources>
+    <string name="app_name">小懒猫</string>
+    <string name="title_activity_sign_in">登入</string>
+
+    <!-- Strings related to login -->
+    <string name="welcome_msg">喵！</string>
+    <string name="sign_out">登出</string>
+    <string name="contacts_permission_rationale">登录需要连接账户信息</string>
+    <string name="sign_in">登入</string>
+    <string name="sign_up">注册</string>
+    <string name="fresh_config">更新配置中...</string>
+    <string name="cause_crash">崩溃啦~</string>
+    <string name="banner_ad_unit_id" translatable="false"></string>
+
+    <!-- Chats -->
+    <!-- Special Chats -->
+    <string name="no_ads">杂货店已经没有存货啦！</string>
+    <string name="full_chat">我已经吃饱啦！别让我变胖胖~</string>
+    <string name="eating_chat">吃...吃...吃...</string>
+    <string name="no_food_chat">小傻瓜，我们已经没有食物啦！</string>
+    <string name="on_rewarded">哇！有吃的啦！</string>
+    <!-- 1 - 3 days -->
+    <!-- ## happy -->
+    <string-array name="happy_chat_array_1">
+        <item>Miu~</item>
+        <item>\@v\@</item>
+        <item>=v=</item>
+    </string-array>
+    <!-- ## normal -->
+    <string-array name="normal_chat_array_1">
+        <item>0.0?</item>
+        <item>-.-</item>
+        <item>Miu</item>
+    </string-array>
+    <!-- ## hungry -->
+    <string-array name="hungry_chat_array_1">
+        <item>TAT!!!</item>
+        <item>QAQ</item>
+        <item>...!!!</item>
+    </string-array>
+    <!-- 4 - 10 days -->
+    <!-- ## happy -->
+    <string-array name="happy_chat_array_2">
+        <item>喵~原来是你~</item>
+        <item>和我玩吧~</item>
+        <item>你是谁？好面熟呢~</item>
+    </string-array>
+    <!-- ## normal -->
+    <string-array name="normal_chat_array_2">
+        <item>喵~</item>
+        <item>~~~Mi</item>
+        <item>牛奶?</item>
+        <item>好吃的?</item>
+    </string-array>
+    <!-- ## hungry -->
+    <string-array name="hungry_chat_array_2">
+        <item>吃的!!!</item>
+        <item>对我好一点嘛~</item>
+        <item>喵...!!!</item>
+    </string-array>
+    <!-- 11+ days -->
+    <!-- ## happy -->
+    <string-array name="happy_chat_array_3">
+        <item>多花时间和我玩嘛 喵 ~.~</item>
+        <item>知道啦~</item>
+        <item>你是谁？</item>
+        <item>该睡觉啦~</item>
+        <item>能喂我一点牛奶嘛~</item>
+        <item>喵</item>
+        <item>喵</item>
+        <item>哈(* ~v~ *)...喵</item>
+        <item>...</item>
+        <item>我会喵喵叫~</item>
+        <item>我是谁？</item>
+        <item>请和我在一起~ </item>
+        <item>对我温柔一点嘛</item>
+        <item>我是一只大懒猫</item>
+        <item>喵...我不喜欢整天工作</item>
+        <item>我经常困...我要睡着...着...了...</item>
+        <item>喵~ 不要忘了喂我哦~ </item>
+        <item>喂我吃的是你的责任！</item>
+        <item>休息一下吧~ 思考思考人生 ^@ w @ ^~</item>
+    </string-array>
+    <!-- ## normal -->
+    <string-array name="normal_chat_array_3">
+        <item>喵</item>
+        <item>喵</item>
+        <item>知道啦~</item>
+        <item>知道啦~</item>
+        <item>...</item>
+        <item>...</item>
+        <item>好吧，你看上去不是坏人。</item>
+        <item>你在干嘛呀~ 记得喂我哦~ </item>
+        <item>\@. @</item>
+        <item>嘿~ 记得喂我哦~ </item>
+        <item>今天天气怎么样？ \n 要不去买点食物？ </item>
+        <item>啊！生活如斯。不好也不会。</item>
+    </string-array>
+    <!-- ## hungry -->
+    <string-array name="hungry_chat_array_3">
+        <item>饿啦~ 快喂我！</item>
+        <item>我讨厌你~ </item>
+        <item>QoQ</item>
+        <item>主人你要好好对我~</item>
+        <item>快喂我！不然咬你啦~</item>
+        <item>快去拿点吃的！</item>
+        <item>民以食为天。猫以食为 饣苗 ~ </item>
+    </string-array>
+</resources>
