@@ -100,8 +100,13 @@ public class CatStatusHolder {
         if (value > MAX_HUNGRY || value < ZERO) return;
         mStatus.hungry = value;
     }
+
     public Integer getHungry() {
         return mStatus.hungry;
+    }
+
+    public Integer getNoHungry() {
+        return 100 - mStatus.hungry;
     }
 
     // Intimacy related functions

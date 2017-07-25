@@ -274,7 +274,7 @@ public class DisplayCatActivity extends AppCompatActivity implements RewardedVid
     }
 
     private void updateCatStatusTextViews() {
-        mCatHungryTextView.setText(mCatStatus.getHungry().toString());
+        mCatHungryTextView.setText(mCatStatus.getNoHungry().toString());
         mCatIntimacyTextView.setText(mCatStatus.getIntimacy().toString());
         mCatFoodTextView.setText(mCatStatus.getFood().toString());
         mAgeTextView.setText(mCatStatus.getAgeString());

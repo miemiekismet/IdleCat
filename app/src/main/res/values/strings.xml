@@ -2,6 +2,12 @@
     <string name="app_name">IdleCat</string>
     <string name="title_activity_sign_in">Sign in</string>
 
+    <!-- String of Button -->
+    <string name="food_button">Food:</string>
+    <string name="cat_name_button">Cat Name: Pusheen</string>
+    <string name="hungry_button">Hungry:</string>
+    <string name="intimacy_button">Intimacy:</string>
+
     <!-- Strings related to login -->
     <string name="welcome_msg">Meow!</string>
     <string name="sign_out">Sign Out</string>
