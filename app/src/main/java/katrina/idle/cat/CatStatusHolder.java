@@ -105,10 +105,6 @@ public class CatStatusHolder {
         return mStatus.hungry;
     }
 
-    public Integer getNoHungry() {
-        return 100 - mStatus.hungry;
-    }
-
     // Intimacy related functions
     public void pat(Integer value) {
         if (value < ZERO) return;

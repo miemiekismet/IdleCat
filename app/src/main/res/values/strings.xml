@@ -7,6 +7,9 @@
     <string name="cat_name_button">Cat Name: Pusheen</string>
     <string name="hungry_button">Hungry:</string>
     <string name="intimacy_button">Intimacy:</string>
+    <string name="feed_button">FEED</string>
+    <string name="chat_button">CHAT</string>
+    <string name="get_food">GET FOOD</string>
 
     <!-- Strings related to login -->
     <string name="welcome_msg">Meow!</string>

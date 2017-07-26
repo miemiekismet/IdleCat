@@ -5,8 +5,11 @@
     <!-- String of Button -->
     <string name="food_button">食物：</string>
     <string name="cat_name_button">猫的名：Pusheen</string>
-    <string name="hungry_button">饥饿度：</string>
+    <string name="hungry_button">饱腹度：</string>
     <string name="intimacy_button">亲密度:</string>
+    <string name="feed_button">喂食</string>
+    <string name="chat_button">摸摸</string>
+    <string name="get_food">获取食物</string>
 
     <!-- Strings related to login -->
     <string name="welcome_msg">喵！</string>
