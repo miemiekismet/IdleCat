@@ -2,6 +2,15 @@
     <string name="app_name">小懒猫</string>
     <string name="title_activity_sign_in">登入</string>
 
+    <!-- String of Button -->
+    <string name="food_button">食物：</string>
+    <string name="cat_name_button">猫的名：Pusheen</string>
+    <string name="hungry_button">饱腹度：</string>
+    <string name="intimacy_button">亲密度:</string>
+    <string name="feed_button">喂食</string>
+    <string name="chat_button">摸摸</string>
+    <string name="get_food">获取食物</string>
+
     <!-- Strings related to login -->
     <string name="welcome_msg">喵！</string>
     <string name="sign_out">登出</string>
